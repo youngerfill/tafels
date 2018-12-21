@@ -1,0 +1,1 @@
+Same as fsm_test01, but always 2 buttons per dialog.

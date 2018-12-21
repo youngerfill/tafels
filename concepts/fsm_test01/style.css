@@ -1,0 +1,19 @@
+/* CSS styles */ 
+
+#dialogwrapper
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.dialog
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    margin: 1em;
+    padding: 0.5em;
+}

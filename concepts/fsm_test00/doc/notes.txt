@@ -1,0 +1,11 @@
+FSM minimal sample
+==================
+
+Allowed transitions:
+Start -> A
+A -> B
+B -> A
+B -> C
+C -> B
+
+Tested/demonstrated in pure javascript with output to JS console.

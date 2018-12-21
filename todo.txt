@@ -1,0 +1,98 @@
+. aantal oefeningen:
+    v pas aan in testpanel
+
+. nummer de oefeningen
+    v extra div links
+
+. Deeltafels
+    . handler
+    . aantal oefeningen?
+
+. setuppanel blijft staan na 'start'
+    . auto-scroll om setuppanel te verbergen
+    . 'x' knop aan testpanel
+
+. warningpanel
+    . verschijnt onder setuppanel
+    . rood kader
+    . close button
+    . daaronder testpanel
+    . auto-scroll verbergt enkel setuppanel en houdt warningpanel zichtbaar
+
+================================================================================
+
+0x0 0x1 0x2 0x3
+1x0 1x1 1x2 1x3
+2x0 2x1 2x2 2x3
+
+================================================================================
+
+UI flowchart:
+
+-> Pagina met:
+    v checkboxes voor elke tafel
+    . checkbox: 'ook deeltafels'
+    v knop: 'start'
+
+    'start' -> valideer checkboxes
+        . Allemaal leeg: Toon bericht
+
+        -> validatie OK: Pagina met:
+        . N vragen met text input velden 
+        . Onderaan: knop 'klaar'
+        . Rechtsboven: knop 'x' met tooltip ('test sluiten')
+
+        'klaar' -> 
+            . validatie van input
+            . nog lege velden? 
+                - Duid lege velden aan in 'qfeedback' div
+                - Toon bericht op de hoogte van de 'klaar' knop:
+                 'Sommige velden heb je niet ingevuld. Je kan ze nu nog invullen.
+                  Wanneer je opnieuw op 'klaar' klikt zullen lege velden fout gerekend worden.'
+                - 'klaar' knop, lager dan de vorige keer
+
+    'x' -> terug naar 1ste pagina
+    v checkbox: 0 ("nul") inbegrepen
+
+
+================================================================================
+
+
+================================================================================
+
+Verberg 'start'-scherm niet tijdens test, maar houd het bovenaan de pagina om
+de selecties te tonen.
+
+Checkboxes zijn disabled, eg: document.getElementById("cb"+is)..disabled=true
+
+'Start' knop evt. verborgen.
+
+
+================================================================================
+multiplication object:
+e.g.:
+multip = {
+    "first": 3,
+    "second": 4,
+    "selected": false
+    };
+
+multip_grid : 11 x 11 grid containing multiplication objects
+
+When building testdata after click on 'start':
+    . set "selected" member to "true" for rows & columns in grid according to values found in td.tables
+    . build an array "rafflehat" with all multips where "selected" is true
+    . the test is built with multips selected randomly from "rafflehat" 
+
+================================================================================
+
+
+================================================================================
+
+un-checken van "alle tafels", 
+
+================================================================================
+
+Indien het aantal geselecteerde tafels niet voldoende is voor het gewenste aantal vragen: toon bericht aan bovenkant vragenlijst.
+
+================================================================================

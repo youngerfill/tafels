@@ -1,0 +1,2 @@
+Same as fsm_test02, but uses styledButton.
+

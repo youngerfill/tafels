@@ -1,0 +1,1 @@
+Minimal app to demonstrate how to avoid capture of iteration variables in a function defined inside a loop.

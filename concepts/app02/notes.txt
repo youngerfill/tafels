@@ -1,0 +1,3 @@
+Same as fsm_test02, but top-level app is a closure.
+
+

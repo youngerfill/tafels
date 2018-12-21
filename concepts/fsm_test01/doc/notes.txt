@@ -1,0 +1,58 @@
+FSM minimal sample with HTML
+============================
+
+Allowed transitions:
+Start -> A
+A -> B
+B -> A
+B -> C
+C -> B
+
+
+
+Pages loads:
+  - A dialog named "State A" appears. Its has 1 button:
+      . "Go to State B"
+
+  - When the button "Go to State B" is clicked, a dialog named "State B" appears under "State A". It has 2 buttons: 
+      . "Go to State A"
+      . "Go to State C"
+      
+  - When the button "Go to State A" is clicked, the dialog "State B" disappears and "State A" is re-enabled.
+  
+  - When the button "Go to State C" is clicked, the controls of "State B" are disabled and a dialog named "State C" appears under "State B". Its has 1 button:
+      . "Go to State B"
+ 
+  - When the button "Go to State B" is clicked, the dialog "State C" disappears and "State B" is re-enabled.
+
+
+================================================================================
+
+Start -> A:
+-----------
+  - Build "State A" dialog
+
+
+A -> B:
+-------
+  - Disable controls of "State A"
+  - Build "State B" dialog
+  
+B -> A:
+-------
+  - Remove "State B" dialog
+  - Re-enable controls of "State A" dialog
+  
+B -> C:
+-------
+  - Disable controls of "State B"
+  - Build "State C" dialog
+
+C -> B:
+-------
+  - Remove "State C" dialog
+  - Re-enable controls of "State B" dialog
+
+
+
+================================================================================

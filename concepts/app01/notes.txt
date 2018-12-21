@@ -1,0 +1,3 @@
+Minimal sample demonstrating top-level app as a closure.
+
+

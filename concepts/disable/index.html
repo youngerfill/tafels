@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="tools.js"></script>
+        <script src="app.js"></script>
+        <title>Disable link test</title>
+    </head>
+
+    <body onload="app.go()">
+
+        <div id="idDialog" class="dialog">
+            <div>
+                <input id="idCheckboxDisableSpan" type="checkbox" onclick="app.onDisableSpan()"></input>
+                <label id="idLabelCheckbox" for="idCheckboxDisableSpan"> Disable span </label>
+            </div>
+            <div>
+                <span id="idSpan">Some text inside a span</span>
+            </div>
+        </div>
+
+        <div class="dialog">
+            <input id="idCheckboxDisableDialog" type="checkbox" onclick="app.onDisableDialog()"></input>
+            <label id="idLabelCheckbox" for="idCheckboxDisableDialog"> Disable dialog </label>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,36 @@
+/* CSS styles */ 
+
+#dialogwrapper
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.dialog
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.styledLink
+{
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.styledLink:hover
+{
+  color: #ffffff;
+  background-color: #0000ff;
+}
+
+.disabled
+{
+    color: #aaaaaa;
+}

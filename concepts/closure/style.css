@@ -1,0 +1,40 @@
+/* CSS styles */ 
+
+.bigdiv
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.paneldiv
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+#header
+{
+}
+
+#main
+{
+}
+
+#footer
+{
+    font-family: monospace;
+    height:100%;
+}
+
+
+body
+{
+}
+
+

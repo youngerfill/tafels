@@ -1,0 +1,64 @@
+/* CSS styles */ 
+
+#dialogwrapper
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.dialog, .errorDialog
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.errorDialog
+{
+    border-color: red;
+}
+
+.styledButton
+{
+    margin: 5px;
+	display: table;
+}
+
+.styledButton>a,.styledButton>span
+{
+    padding: 5px;
+    text-decoration:none;
+    border: 3px solid;
+	display: table-cell;
+}
+
+.styledButton.enabled>a
+{
+    background-color: #0000aa;
+    color:#ffffff;
+    border-color: #0000aa;
+}
+
+.styledButton.enabled>a:hover
+{
+    background-color: #4444ff;
+    border-color: #4444ff;
+    color:#ffffff;
+}
+
+.styledButton.enabled>a:focus
+{
+    outline: 3px solid #cccccc;
+}
+
+.styledButton.disabled>span
+{
+    background-color: #aaaaaa;
+    border-color: #aaaaaa;
+    color: #ffffff;
+}
